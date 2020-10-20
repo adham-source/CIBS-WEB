@@ -1,0 +1,155 @@
+doctype html
+html(lang = 'ar' dir = 'rtl')
+    head
+        // Required meta tags 
+        meta(charset = 'UTF-8' '')/
+        meta(name = 'viewport' content = 'width=device-width, initial-scale=1, shrink-to-fit=no' '')/
+        //- Styles.pug
+        include ./includes/styles.pug
+        title الرئيسية
+    body
+        //- navigation.pug
+        include ./includes/navigation.pug
+        //- Slider
+        include ./includes/slider.pug
+
+        // Start business soluation 
+        section(class = 'business-soluation py-4')
+            div.container-fluid
+                h2(class = 'sub-title text-center mb-5') شركة الإتصالات المتكاملة 
+                div(class = 'row')
+                    div(class = 'col-lg-6 col-md-12 py-3')
+                        div(class="nav nav-pills justify-content-center" id="v-pills-tab" role="tablist" aria-orientation="vertical")
+                            a(class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true")
+                                img(src = './assets/images/business_decisions.svg')
+                            a(class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false")
+                                img(src = './assets/images/creative_team.svg')
+                            a(class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false")
+                                img(src = './assets/images/programming.svg')
+                            a(class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false")
+                                img(src = './assets/images/multitasking.svg')
+                    div(class = 'col-lg-6 col-md-12 py-3')
+                        h3(class = 'my-2') حلول الأعمال
+                        div(class="tab-content mt-3" id="v-pills-tabContent")
+                            div(class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab")
+                                h5(class = 'solu-title')  تخطيط موارد المؤسسات
+                                p(class = 'solu-text global-text') هو برنامج لإدارة عمليات الأعمال يسمح للمؤسسة باستخدام نظام من التطبيقات المتكاملة لإدارة الأعمال وأتمتة العديد من وظائف المكتب الخلفي المتعلقة بالتكنولوجيا والخدمات والموارد البشرية.
+                                a(class = 'btn-link' href = '#') المزيد
+                            div(class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab")
+                                h5(class = 'solu-title')  إدارة علاقات العملاء
+                                p(class = 'solu-text global-text') إدارة علاقات العملاء هي طريقة لإدارة تفاعل الشركة مع العملاء الحاليين والمحتملين. يستخدم تحليل البيانات حول تاريخ العملاء مع شركة لتحسين العلاقات التجارية مع العملاء ، مع التركيز بشكل خاص على الاحتفاظ بالعملاء ودفع نمو المبيعات في نهاية المطاف
+                                a(class = 'btn-link' href = '#') المزيد
+                            div(class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab")
+                                h5(class = 'solu-title') عرض عملك باحتراف
+                                p(class = 'solu-text global-text') القيام بعرض الأعمال وتسويقها وتنظيمها بطريقة إحترافية وعلى المقاييس العالمية لعرض المشاريع أو الأعمال .
+                                a(class = 'btn-link' href = '#') المزيد
+                            div(class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab")
+                                h5(class = 'solu-title')  نظام إدارة المطاعم
+                                p(class = 'solu-text global-text') إدارة المطعم هي مفتاح أي نجاح المطعم. يستغرق الكثير من الوقت والاستثمار للحصول على الصيغة الصحيحة - المزيج الحالي من جميع المكونات التي تجعل المطعم يعمل بشكل جيد - العمليات والتسويق
+                                a(class = 'btn-link' href = '#') المزيد
+        // End business soluation 
+
+        // Start design web 
+        section(class = 'design-web py-4')
+            div.container-fluid
+                div(class = 'content-text text-center py-2')
+                    h2(class = 'sub-title') تصميم مواقع
+                    p(class = 'global-text') يحتوي تصميم موقع الويب للشركات على بعض العناصر المصممة لجذب العملاء #[br/] أحد هذه العناصر هى المقدمة فإن مقدمة الصفحة أو الموقع تتفاعل مع زوار الموقع الإلكتروني أو الصفحة للمستخدم ويغريه لزيارة المزيد من المواقع .
+                div(class = 'row text-center')
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info')
+                            span(class = 'fas fa-laptop-code')
+                            h5(class = 'titles') تحسين مصدقية العمل 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info')
+                            span(class = 'far fa-comments')
+                            h5(class = 'titles') تعزيز وجودك على الإنترنت  
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info')
+                            span(class = 'fas fa-people-carry')
+                            h5(class = 'titles') بناء علاقة قوية مع السوق 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info')
+                            span(class = 'fas fa-project-diagram')
+                            h5(class = 'titles') طريقة فعالة لتعزيز عملك 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info')
+                            span(class = 'fas fa-funnel-dollar')
+                            h5(class = 'titles') إنشاء آداة توليد المبيعات 
+                    div(class = 'col-lg-4 col-md-6')
+                        div(class = 'design-info')
+                            span(class = 'fas fa-bezier-curve')
+                            h5(class = 'titles') عرض عملك باحتراف  
+        // End design web 
+
+        // Start our programs 
+        section(class = 'our-programs position-relative py-4')
+            div.container-fluid
+                h2(class = 'title-program') برامجنا
+                div(class = 'owl-carousel py-3')
+                    div
+                        div(class = 'card')
+                            |
+                            |
+                            img(class = 'card-img-top' src = './assets/images/environmental_study.svg' alt = 'image' '')/
+                            div(class = 'card-body')
+                                h5(class = 'card-title') نظام المحسابات العامة 
+                                p(class = 'card-text') هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي
+                                div(class = 'text-center')
+                                    a(class = 'btn-link' href = '#') التفاصيل
+                    div
+                        div(class = 'card')
+                            |
+                            |
+                            img(class = 'card-img-top' src = './assets/images/work_together.svg' alt = 'image' '')/
+                            div(class = 'card-body')
+                                h5(class = 'card-title') نظام الموارد البشرية 
+                                p(class = 'card-text') هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي
+                                div(class = 'text-center')
+                                    a(class = 'btn-link' href = '#') التفاصيل
+                    div
+                        div(class = 'card')
+                            |
+                            |
+                            img(class = 'card-img-top' src = './assets/images/website_builder.svg' alt = 'image' '')/
+                            div(class = 'card-body')
+                                h5(class = 'card-title') نظام المخازن العامة 
+                                p(class = 'card-text') هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي
+                                div(class = 'text-center')
+                                    a(class = 'btn-link' href = '#') التفاصيل
+                    div
+                        div(class = 'card')
+                            |
+                            |
+                            img(class = 'card-img-top' src = './assets/images/software_engineer.svg' alt = 'image' '')/
+                            div(class = 'card-body')
+                                h5(class = 'card-title')  الأصول الثابتة 
+                                p(class = 'card-text') هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي
+                                div(class = 'text-center')
+                                    a(class = 'btn-link' href = '#') التفاصيل
+                    div
+                        div(class = 'card')
+                            |
+                            |
+                            img(class = 'card-img-top' src = './assets/images/environmental_study.svg' alt = 'image' '')/
+                            div(class = 'card-body')
+                                h5(class = 'card-title') التصنيع  
+                                p(class = 'card-text') هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي
+                                div(class = 'text-center')
+                                    a(class = 'btn-link' href = '#') التفاصيل
+                    div
+                        div(class = 'card')
+                            |
+                            |
+                            img(class = 'card-img-top' src = './assets/images/software_engineer.svg' alt = 'image' '')/
+                            div(class = 'card-body')
+                                h5(class = 'card-title') تطبيقات الهاتف المحمول 
+                                p(class = 'card-text') هذا النص هو مثال لنص يمكن أن يستبدل فى نفس المساحة ، لقد تم توليد هذا النص من مولد النص العربي
+                                div(class = 'text-center')
+                                    a(class = 'btn-link' href = '#') التفاصيل
+        // End our programs 
+
+        //- footer.pug
+        include ./includes/footer.pug
+        //- scripts.pug
+        include ./includes/scripts.pug

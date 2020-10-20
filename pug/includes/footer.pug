@@ -1,0 +1,52 @@
+// Start footer 
+footer(class = 'footer py-4')
+    div.container-fluid
+        div(class = 'row')
+            div(class = 'col-lg-4 py-2')
+                h3(class = 'title-footer') من نحن
+                div(class = 'content')
+                    p(class = 'text-global') شركة متخصصة في التوصيف والتحليل وتصميم البرمجيات وقواعد البيانات والتطبيقات بمختلف أنواعها وأعمال إنتاج البرامج والتطبيقات وإنشاء قواعد البيانات ونظم المعلومات الالكترونية وتشغيلها والتدريب عليها. إنتاج المحتوى الإلكتروني بصوره المختلفه من صوت وصورة وبيانات وإدخال البيانات على الحاسب بالوسائل الإلكترونية وأعمال التوصيف والتصميم لنظم الحاسبات بمختلف أنواعها وإنتاج وتطوير النظم المدمجة وتشغيلها والتدريب عليها. أعمال التوصيف والتصميم لشبكات نقل وتداول البيانات وإقامة وتشغيل وصيانة شبكات نقل الصوت والصورة والمعلومات المكتوبة وتقديم خدمات القيمة المضافة .
+                    //-Social icon
+                    include ./social-icon.pug
+            div(class = 'col-lg-4 py-2')
+                h3(class = 'title-footer') تواصل معنا
+                div(class = 'content')
+                    form(class = 'form' action = '#' method = 'GET')
+                        label الايميل *
+                        div(class = 'form-group')
+                            input(class = 'form-control form-control-lg' type = 'email' placeholder = 'اكتب الايميل' required '')/
+                        label الرسالة *
+                        div(class = 'form-group')
+                            textarea(class = 'form-control form-control-lg' rows = '3' placeholder = 'اكتب رسالتك ...' required)
+                        div(class = 'btn-content')
+                            button(class = 'btn-submit' type = 'submit') ارسل
+            div(class = 'col-lg-4 py-2')
+                h3(class = 'title-footer') العنوان
+                div(class = 'address-details content')
+                    div(class = 'place info')
+                        i(class = 'fa fa-map-marker')
+                        span(class = 'text ml-2') مصر - القاهرة - المهندسين - ش السودان
+                        a(class = 'global-link' href = '#')
+                    div(class = 'phone info my-4')
+                        i(class = 'fa fa-phone')
+                        span(class = 'text ml-2') 00201280520100
+                        a(class = 'global-link' href = 'tel:00201280520100')
+                    div(class = 'email info')
+                        i(class = 'fa fa-envelope')
+                        span(class = 'text ml-2') example@gmail.com
+                        a(class = 'global-link' href = 'mailto:example@gmail.com')
+                
+                a(class = 'footer-brand' href = './index.html')
+                    img(src = './assets/images/logo.png' alt = 'CIBS' '')/
+section(class = 'footer-bottom')
+    center(class = 'm-auto') حقوق الطبع 
+        |
+        |
+        span(class = 'entity') &copy; محفوظة | 
+        |
+        |
+        a(href = './index.html'): bdi CIBS
+        |
+        |
+        bdi . 2020
+// End footer 
