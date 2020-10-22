@@ -7,11 +7,12 @@ window.addEventListener('scroll', () =>  {
         myButtonUp = document.querySelector('#page-up');
     if (prevScrollPos > currentScrollPos) {
         myNavbar.style.top = '0';
+
     } else {
         myNavbar.style.top = '-100px';
     }
     prevScrollPos = currentScrollPos;
-/*
+    /*
     if (prevScrollPos >= 400) {
         myButtonUp.style.display = 'block';
         myButtonUp.onclick = function () {
@@ -21,6 +22,17 @@ window.addEventListener('scroll', () =>  {
         myButtonUp.style.display = 'none';
     }*/
 });
+
+// Nice scroll
+/*$("body").niceScroll({
+    cursorcolor:"var(--main-color)",
+    cursorwidth:"10px",
+    background: "var(--main-linear)",
+    scrollspeed: 90 
+});*/
+
+// Aos animation
+AOS.init();
 
 // camera plugin slider
 jQuery('#camera_wrap').camera({
@@ -40,9 +52,6 @@ jQuery('#camera_wrap').camera({
     // 'bottom', 'left', 'top', 'right'
     barPosition: 'top', 
     
-    // the number of columns
-    cols: 6,
-    
     //for the complete list http://jqueryui.com/demos/effect/easing.html
     easing: 'easeInOutExpo',  
     
@@ -60,7 +69,7 @@ jQuery('#camera_wrap').camera({
     gridDifference: 250,  
     
     // here you can type pixels (for instance '300px'), a percentage (relative to the width of the slideshow, for instance '50%') or 'auto'
-    height: '50%',  
+    height: 'auto',  
     
     // the path to the image folder (it serves for the blank.gif, when you want to display <a href="https://www.jqueryscript.net/tags.php?/video/">video</a>s)
     imagePath: 'images/',  
@@ -79,7 +88,7 @@ jQuery('#camera_wrap').camera({
     piePosition: 'rightTop', //'rightTop', 'leftTop', 'leftBottom', 'rightBottom'
     
     // you can also leave it blank
-    minHeight: '200px',  
+    minHeight: '0px',  
     
     // true or false, to display or not the navigation buttons
     navigation: true, 
@@ -124,7 +133,7 @@ jQuery('#camera_wrap').camera({
     thumbnails: false,
     
     // milliseconds between the end of the sliding effect and the start of the nex one
-    time: 7000, 
+    time: 9000, 
     
     // lenght of the sliding effect in milliseconds
     transPeriod: 1500
